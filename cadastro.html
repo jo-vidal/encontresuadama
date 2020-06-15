@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cadastro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="http://todos.siteoficial.ws/encontresuadama.com.br/estilo.css">
+  <link href='https://fonts.googleapis.com/css?family=Euphoria%20Script:400' rel='stylesheet' type='text/css'> 
+</head>
+<body>
+  <img src ="https://yata-apix-a1760502-bb74-4e43-ac5f-2d5af2888d10.lss.locawebcorp.com.br/08185b5a9c024272be62d7c708498803.png" width="940">
+  <nav id="menu">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html">Fazer Login</a></li>  
+      </ul>
+  </nav>
+    <div class= "conteudo">
+    <br/>
+    
+  <form method="post" action= "cadastro.php">
+    <h1> Cadastre-se: </h1>
+
+<form method="POST" action="cadastro.php">
+<label>Nome:</label>
+<input type="text" size="25" name="nome" id="nome" placeholder="seu nome" required="required" pattern="[A-Za-z]{1,15}" title="Utilize apenas letras."><br>
+
+<label>Sobrenome:</label>
+<input type="text" size="25" name="sobrenome" id="sobrenome" placeholder="seu sobrenome" required="required" pattern="[A-Za-z]{1,15}+$" title="Utilize apenas letras."><br>
+
+<label>Login:</label>
+<input type="text" size="25" name="login" id="login" placeholder="escolha um nome de usuário" required="required" pattern="[a-z0-9]{4,8}" title="Apenas Alphanumericos de 4 á 8 caracteres. Letras minisculas!"><br>
+
+<label>Senha:</label>
+<input type="password" size="25" name="senha" id="senha" placeholder="digite uma senha" required="required" pattern=".{8,16}" title="Cria uma senha de 8 á 12 caracteres. Sem espaços!"><br>
+
+<label>Email:</label>
+<input type="email" size="25" name="email" id="email" placeholder="seuemail@aqui.com.br" required="required"><br>
+
+<label>Sexo:</label><select name="sexo" required="required">
+    <option value="">Selecione</option>
+    <option value="fem">Feminino</option>
+    <option value="masc">Masculino</option>
+    <option value="other">Outro</option>
+  </select><br>
+<input type="reset" class="botao" value="Reset" />
+<input type="submit" class="botao" value="Cadastrar" id="cadastrar" name="cadastrar">
+
+  </form>
+  <br/>
+  </div>
+<footer class = "rodape">
+  <img src ="https://yata2.lss.locawebcorp.com.br/fd5702ff5551981dd92d646e34f76388fe21a43afc01cf1b1c77ae897aa7c13f" width="110" height="110">
+  <p style="text-align:center"><span style="color:#7f8c8d">Entre em contato: projeto@todos.siteoficial.ws</span></p>
+  <body onload="javascript:exibeDataHora('hora');">
+  <div id="hora"></div>
+  <p style="text-align:center"><span style="color:#696969"><span style="font-size:11px">ENCONTRE SUA DAMA&nbsp;&copy; 2019. &nbsp;CRIADO PELOS FORMANDOS DE ADS</span></span></p>
+</footer>
+
+</body>
+</html>
+
