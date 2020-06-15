@@ -1,0 +1,81 @@
+/*Galeria de Imagens*/
+.slider{    
+  display: block;    
+  height: 293px;    
+  width: 600px;    
+  margin: auto;    
+  margin-top: 20px;    
+  position: relative;
+}
+.slider li {    
+  list-style: none;    
+  position: absolute;
+}
+.slider img {    
+  margin: auto;    
+  height: 100%;    
+  width: 100%;    
+  vertical-align: top;
+} 
+.slider input {    
+  display: none;
+}
+.slider label {    
+  background-color: #000;    
+  bottom: 10px;    
+  cursor: pointer;    
+  display: block;    
+  height: 10px;    
+  position: absolute;    
+  width: 10px;    
+  z-index: 10;
+}
+.slider li:nth-child(1) label {    left: 10px;}
+.slider li:nth-child(2) label {    left: 40px;}
+.slider li:nth-child(3) label {    left: 70px;}
+.slider li:nth-child(4) label {    left: 100px;}
+.slider li:nth-child(5) label {    left: 130px;}
+.slider img {    opacity: 0;    visibility: hidden;}
+.slider li input:checked ~ img {    opacity: 1;    visibility: visible;    z-index: 10;}
+
+/*Galeria de Fotos 2*/
+.gallerycontainer{
+position: relative;
+/*Add a height attribute and set to largest image's height to prevent overlaying*/
+}
+
+.thumbnail img{
+border: 1px solid white;
+margin: 0 5px 5px 0;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+}
+
+.thumbnail:hover img{
+border: 1px solid blue;
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+position: absolute;
+background-color: lightyellow;
+padding: 5px;
+left: -1000px;
+border: 1px dashed gray;
+visibility: hidden;
+color: black;
+text-decoration: none;
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image*/
+visibility: visible;
+top: 0;
+left: 230px; /*position where enlarged image should offset horizontally */
+z-index: 50;
+}
